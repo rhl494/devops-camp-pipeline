@@ -29,7 +29,7 @@ pipeline {
         //TODO("Lab 7 - Automated Security Scans"): add a stage
         stage('Deploy') {
             steps {
-                echo "Deployment stage"
+                echo "Deployment stage
                 //TODO("Lab 5 - Deploy to EKS"): deploy docker images
             }
         }
