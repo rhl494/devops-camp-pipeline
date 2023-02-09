@@ -61,6 +61,7 @@ pipeline {
                       }
                   }
               }
+              //Added Security Scanning
               stage('Security scanning') {
                 steps {
                     withCredentials([usernamePassword(credentialsId: 'rahul-saxena-harbor-auth', usernameVariable: 'USERNAME', passwordVariable: 'PASSWORD')]) {
