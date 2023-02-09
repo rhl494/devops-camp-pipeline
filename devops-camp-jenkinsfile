@@ -91,7 +91,7 @@ pipeline {
                   }
             }
         }
-
+//git
         stage('Deploy') {
             steps {
                 echo "Deployment stage"
