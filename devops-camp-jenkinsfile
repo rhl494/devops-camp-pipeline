@@ -82,7 +82,7 @@ pipeline {
                 }
             }
         }
-        TODO("Lab 7 - Automated Security Scans"): add a stage
+        //TODO("Lab 7 - Automated Security Scans"): add a stage
         stage('Security scanning') {
             steps {
                   withCredentials([usernamePassword(credentialsId: 'rahul-saxena-harbor-auth', usernameVariable: 'USERNAME', passwordVariable: 'PASSWORD')]) {
@@ -91,7 +91,7 @@ pipeline {
                   }
             }
         }
-//git
+
         stage('Deploy') {
             steps {
                 echo "Deployment stage"
